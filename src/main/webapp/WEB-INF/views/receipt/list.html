@@ -23,7 +23,7 @@
             <td th:text="${receipt.cost}"></td>
             <td th:text="${receipt.note}"></td>
             <td th:text="${receipt.payList}"></td>
-            <td th:text="${receipt.pictureName}"></td>
+            <td><img width="100" height="100" th:src="@{'/fileanh/' + ${receipt.pictureName}}" alt=""></td>
             <td><a th:href="@{/edit/__${receipt.id}__ }">Edit</a></td>
             <td><a th:href="@{/delete/__${receipt.id}__}">Delete</a></td>
         </tr>
